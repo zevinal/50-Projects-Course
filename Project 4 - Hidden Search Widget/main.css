@@ -23,7 +23,7 @@ body {
     font-size: 18px;
     padding: 15px;
     height: 50px;
-    width: 200px;
+    width: 50px;
     transition: width 0.5s ease-in;
 }
 .button {
@@ -32,7 +32,22 @@ body {
     cursor: pointer;
     font-size: 24px;
     position: absolute;
+    top: 0;
+    left: 0;
     height: 50px;
     width: 50px;
     transition: transform 0.5s ease-in;
+}
+.button:focus,
+.input:focus {
+    outline: none;
+}
+.button:active {
+    font-size: 20px;
+}
+.search.open .input {
+    width: 200px;
+}
+.search.open .button {
+    transform: translateX(200px);
 }
