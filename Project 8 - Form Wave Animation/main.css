@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Muli', sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #aaaaff;
+    color: white;
+}
+.container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 25px 50px;
+    border-radius: 10px;
+}
+.container h1 {
+    text-align: center;
+}
+.container a {
+    text-decoration: none;
+    color: #aaaaff;
+}
+.container a:hover {
+    font-weight: bold;
+}
+.form-control {
+    position: relative;
+    margin: 25px;
+    width: 300px;
+}
+.form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid white;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: white;
+}
+.form-control input:focus,
+.formcontrol input:valid {
+    outline: 0;
+    border-bottom-color: #aaaaff;
+}
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    background: #aaaaff;
+    padding: 20px;
+    font-family: inherit;
+    font-size: 1.5em;
+    border: 0;
+    border-radius: 10px;
+}
+.btn:focus {
+    outline: 0;
+}
+.btn:active {
+    transform: scale(0.98);
+}
+.text {
+    margin-top: 25px;
+}
+.form-control label {
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+.form-control label span {
+    display: inline-block;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.7, -0.5, 0.265, 1.55);
+}
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+    color: #aaaaff;
+    transform: translateY(-30px);
+}
